@@ -40,4 +40,14 @@ const ourTeam = [
         image: 'barbara-ramos-graphic-designer.jpg'
     },
 
-]
+];
+
+console.log('ourTeam', ourTeam, typeof ourTeam);
+
+for (let i = 0; i < ourTeam.length; i++) {
+    console.log(ourTeam[i]);
+
+    console.log('Name:', ourTeam[i].name);
+    console.log('Role:', ourTeam[i].role);
+    console.log('Image:', ourTeam[i].image);
+}
