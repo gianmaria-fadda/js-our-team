@@ -44,10 +44,28 @@ const ourTeam = [
 
 console.log('ourTeam', ourTeam, typeof ourTeam);
 
+const teamContainer = document.getElementById('team-container')
+
 for (let i = 0; i < ourTeam.length; i++) {
     console.log(ourTeam[i]);
 
     console.log('Name:', ourTeam[i].name);
     console.log('Role:', ourTeam[i].role);
     console.log('Image:', ourTeam[i].image);
+
+    teamContainer.innerHTML += `
+    <ul>
+        <li>
+            Name: <strong>${ourTeam[i].name}</strong>
+        </li>
+        <li>
+            Role: <strong>${ourTeam[i].role}</strong>
+        </li>
+        <li>
+            Image:
+        </li>
+    </ul>
+
+    <hr>
+    `;
 }
